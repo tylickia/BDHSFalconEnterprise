@@ -22,7 +22,7 @@
             <div class="header-bar">
                 <div>
                     <div class="logo">
-                        <a href="/tylickia/webdev114/FinalProject/"><img src="images/falcon.png" alt="logo" height="125"></a>
+                        <a href="/"><img src="images/falcon.png" alt="logo" height="125"></a>
                     </div>
                     <div class="name-address">
                         <h1>
@@ -37,24 +37,24 @@
                     </div>
                 </div>
                 <div class="contact-buttons">
-                    <a href="/tylickia/webdev114/FinalProject/contact-form.html">Message Us Now</a>
+                    <a href="/contact-form.html">Message Us Now</a>
                 </div>
             </div>
             <nav class="navbar">
                 <div class="navlink">
-                    <a href="/tylickia/webdev114/FinalProject/">Home</a>
+                    <a href="/">Home</a>
                 </div>
                 <div class="navlink">
-                    <a href="/tylickia/webdev114/FinalProject/about-us.html">About Us</a>
+                    <a href="/about-us.html">About Us</a>
                 </div>
                 <div class="navlink">
-                    <a href="/tylickia/webdev114/FinalProject/photogallery.html">Photo Gallery</a>
+                    <a href="/photogallery.html">Photo Gallery</a>
                 </div>
                 <div class="navlink">
-                    <a href="/tylickia/webdev114/FinalProject/contact-us.html">Contact Us</a>
+                    <a href="/contact-us.html">Contact Us</a>
                 </div>
                 <div class="navlink">
-                    <a href="/tylickia/webdev114/FinalProject/faq.html">FAQ</a>
+                    <a href="/faq.html">FAQ</a>
                 </div>
             </nav>
             <hr>
@@ -86,44 +86,33 @@
 			<textarea id="message" name="message" rows="4" disabled><?php echo $_REQUEST['message'] ?></textarea>
 		</fieldset>
   </section>
-	  <!-- This entire script, including the opening and closing ?php tags, can be nested inside of any other tag, such as div or p, to control positioning and formatting of confirmation message spit out by the email script -->
 <h2>
 <?php
-  if (isset($_REQUEST['email'])) { //if "email" variable is filled out, send email
-  
-  //Set admin email for email to be sent to (use you own MATC email address)
-    $admin_email = "tylickia@gmatc.matc.edu"; 
-
-  //Set PHP variable equal to information completed on the HTML form
-    $email = $_REQUEST['email']; //Request email that user typed on HTML form
-    $phone = $_REQUEST['phone']; //Request phone that user typed on HTML form
-    $date_needed = $_REQUEST['date_needed']; //Request subject that user typed on HTML form
-    $item_options = $_REQUEST['item_options']; //Request subject that user typed on HTML form
-    $message = $_REQUEST['message']; //Request message that user typed on HTML form
-  //Combine first name and last name, adding a space in between
+  if (isset($_REQUEST['email'])) { 
+    $admin_email = "asullivan@browndeerschools.com"; 
+    $email = $_REQUEST['email']; 
+    $phone = $_REQUEST['phone']; 
+    $date_needed = $_REQUEST['date_needed'];
+    $item_options = $_REQUEST['item_options']; 
+    $message = $_REQUEST['message']; 
     $name = $_REQUEST['first_name'] . " " .  $_REQUEST['last_name']; 
     $subject = "New order inquiry: " . $item_options; 
-            
-  //Start building the email body combining multiple values from HTML form    
+             
     $body  = "From: " . $name . "\n"; 
-    $body .= "Email: " . $email . "\n"; //Continue the email body
-    $body .= "Phone: " . $phone . "\n"; //Continue the email body
-    $body .= "Date Needed: " . $date_needed . "\n"; //Continue the email body
-    $body .= "Item Options: " . $item_options . "\n"; //Continue the email body
-    $body .= "Message: " . $message; //Continue the email body
+    $body .= "Email: " . $email . "\n";
+    $body .= "Phone: " . $phone . "\n";
+    $body .= "Date Needed: " . $date_needed . "\n";
+    $body .= "Item Options: " . $item_options . "\n";
+    $body .= "Message: " . $message;
   
-  //Create the email headers for the from and CC fields of the email     
-    $headers = "From: " . $name . " <" . $email . "> \r\n"; //Create email "from"
-    $headers .= "CC: " . $name . " <" . $email . ">"; //Send CC to visitor
-    
-  //Actually send the email from the web server using the PHP mail function
+    $headers = "From: " . $name . " <" . $email . "> \r\n"; 
+    $headers .= "CC: " . $name . " <" . $email . ">"; 
+
   mail($admin_email, $subject, $body, $headers); 
     
-  //Display email confirmation response on the screen
   echo "Thank you for contacting us!"; 
   }
   
-  //if "email" variable is not filled out, display an error
   else  { 
      echo "There has been an error!";
         }
