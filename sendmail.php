@@ -107,15 +107,14 @@
   
     $headers = "From: " . $name . " <" . $email . "> \r\n"; 
     $headers .= "CC: " . $name . " <" . $email . ">"; 
-
-  mail($admin_email, $subject, $body, $headers); 
-    
-  echo "Thank you for contacting us!"; 
-  }
+  
+    mail($admin_email, $subject, $body, $headers); 
+    echo "Thank you for contacting us!"; 
+    }
   
   else  { 
-     echo "There has been an error!";
-        }
+    echo "There has been an error!";
+    }
 ?>
 
 </h2>
