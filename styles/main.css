@@ -76,6 +76,7 @@ h2 {
 
 .flexbody {
   display: flex;
+  width: 1fr;
 }
 
 .flexleft {

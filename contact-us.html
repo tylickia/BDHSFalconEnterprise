@@ -1,96 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="description"
+			content="Falcon Enterprise"
+		/>
+		<meta
+			name="page-width"
+			content="width=device-width, initial-scale=1.0"
+		/>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Falcon Enterprise">
-    <meta name="page-width" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/normalize.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/contact.css"
+		/>
+		<link
+			rel="shortcut icon"
+			href="images/falcon.ico"
+		/>
+		<script
+			src="https://formspree.io/js/formbutton-v1.min.js"
+			defer
+		></script>
+		<script>
+			window.formbutton =
+				window.formbutton ||
+				function () {
+					(formbutton.q = formbutton.q || []).push(arguments);
+				};
+			formbutton("create", {
+				action: "https://formspree.io/f/xlekrnvg",
+				title: "How can we help you?",
+				fields: [
+					{
+						type: "text",
+						label: "Name:",
+						name: "name",
+						placeholder: "First Last",
+					},
+					{
+						type: "email",
+						label: "Email:",
+						name: "email",
+						required: true,
+						placeholder: "your@email.com",
+					},
+					{
+						type: "text",
+						label: "Phone Number:",
+						name: "phone",
+						required: true,
+						placeholder: "(XXX) XXX-XXXX",
+					},
+					{
+						type: "textarea",
+						label: "Message:",
+						name: "message",
+						placeholder: "What can we do for you?",
+					},
+					{ type: "submit" },
+				],
+				styles: {
+					title: {
+						backgroundColor: "#19647e",
+					},
+					modal: {
+						backgroundColor: "grey",
+					},
+					body: {
+						backgroundColor: "#grey",
+					},
+					button: {
+						backgroundColor: "#19647e",
+					},
+				},
+			});
+		</script>
+	</head>
 
-    <title>
-        Contact Us
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="shortcut icon" href="images/falcon.ico">
-</head>
-  
-<body>
-    <header>
-        <section>
-            <div class="header-bar">
-                <div>
-                    <div class="logo">
-                        <a href="/"><img src="images/falcon.png" alt="logo" height="125"></a>
-                    </div>
-                    <div class="name-address">
-                        <h1>
-                            Falcon Enterprise
-                        </h1>
-                       
-                        <h3>
-                            Brown Deer, Wisconsin<br>
-                            <a href="mailto:asullivan@browndeerschools.com">asullivan@browndeerschools.com</a>
-                            <br>
-                        </h3>
-                    </div>
-                </div>
-                <div class="contact-buttons">
-                    <a href="/contact-form.html">Message Us Now</a>
-                </div>
-            </div>
-            <nav class="navbar">
-                <div class="navlink">
-                    <a href="/">Home</a>
-                </div>
-                <div class="navlink">
-                    <a href="/about-us.html">About Us</a>
-                </div>
-                <div class="navlink">
-                    <a href="/photogallery.html">Photo Gallery</a>
-                </div>
-                <div class="navlink">
-                    <a href="/contact-us.html">Contact Us</a>
-                </div>
-                <div class="navlink">
-                    <a href="/faq.html">FAQ</a>
-                </div>
-            </nav>
-            <hr>
-        </section>
-    </header>
-    
-    <main>
-        <article>
-            <h2>
-                Contact us for custom orders.
-            </h2>
-            <h3>
-                 We can create unique gifts for your family and friends.
-            </h3>
-            <p>
-                <strong>
-                    <a href="mailto:asullivan@browndeerschools.com">Send us an email</a>
-                    <br>
-                    <a href="tel:414-123-4567">Give us a call</a>
-                    <br>
-                    <a href="/contact-form.html">Contact Form</a>
-                </strong>
-            </p>
-            <p>
-             We can create custom gifts for weddings, awards ceremonies, and business meetings.
-            </p>
-        </article>
-    </main>
+	<body>
+		<header>
+			<section>
+				<div class="header-bar">
+					<div>
+						<div class="logo">
+							<a href="/"
+								><img
+									src="images/falcon.png"
+									alt="logo"
+									height="125"
+							/></a>
+						</div>
+						<div class="name-address">
+							<h1>Falcon Enterprise</h1>
 
-    <footer>
-        <p>
-            <i>&copy; Falcon Enterprise 2022</i>
-        </p>
-    </footer>
-</body>
-  
+							<h3>
+								Brown Deer, Wisconsin<br />
+								<a href="mailto:asullivan@browndeerschools.com"
+									>asullivan@browndeerschools.com</a
+								>
+								<br />
+							</h3>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar">
+					<div class="navlink">
+						<a href="/">Home</a>
+					</div>
+					<div class="navlink">
+						<a href="/about-us.html">About Us</a>
+					</div>
+					<div class="navlink">
+						<a href="/photogallery.html">Photo Gallery</a>
+					</div>
+					<div class="navlink">
+						<a href="/contact-us.html">Contact Us</a>
+					</div>
+					<div class="navlink">
+						<a href="/faq.html">FAQ</a>
+					</div>
+				</nav>
+				<hr />
+			</section>
+		</header>
+
+		<main>
+			<article>
+				<h2>Contact us for custom orders.</h2>
+				<h3>We can create unique gifts for your family and friends.</h3>
+				<p>
+					<strong>
+						<a href="mailto:asullivan@browndeerschools.com">Send us an email</a>
+						<br />
+						<a href="tel:414-123-4567">Give us a call</a>
+					</strong>
+				</p>
+				<p>
+					We can create custom gifts for weddings, awards ceremonies, and
+					business meetings.
+				</p>
+			</article>
+		</main>
+
+		<footer>
+			<p>
+				<i>&copy; Falcon Enterprise 2022</i>
+			</p>
+		</footer>
+	</body>
 </html>
