@@ -216,6 +216,14 @@ nav #icon{
     text-decoration: none;
     list-style: none;
   }
+  p.logoText {
+    font-size: 24px;
+  }
+  nav img {
+    padding-left: 10px;
+    height: 40px;padding-top: 10px;
+
+  }
   nav #icon{
     display: block;
     margin-left: auto;
@@ -228,6 +236,7 @@ nav #icon{
     background: #0E3A49;
     top: 80px;
     left: -100%;
+    margin-right: 100px;
     text-align: center;
     transition: all .5s;
   }
