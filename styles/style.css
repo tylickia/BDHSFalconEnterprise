@@ -59,7 +59,7 @@ details:hover {
 
 .flexbody {
   display: flex;
-  max-width: 1fr;
+  max-width: 100vw;
 }
 
 .flexleft {
