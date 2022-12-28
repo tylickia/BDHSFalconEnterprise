@@ -166,7 +166,7 @@ nav a{
 }
 a.active{
   border: 1px solid #fdc323;
-  color: white;
+  color: black;
   background-color: #fdc323;
   transition: .5s;
 }
