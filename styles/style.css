@@ -197,7 +197,7 @@ nav #icon{
   p.logoText{
     font-size: 32px;
   }
-  iframe{
+  iframe.YouTubeLink{
     width: 504px;
     height: 283.2px;
   }
@@ -224,7 +224,7 @@ nav #icon{
     flex-direction: column;
     align-items: center;
   }
-  iframe {
+  iframe.YouTubeLink{
     width: 378px;
     height: 212.4px;
     }
