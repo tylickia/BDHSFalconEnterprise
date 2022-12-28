@@ -59,7 +59,7 @@ details:hover {
 
 .flexbody {
   display: flex;
-  width: 1fr;
+  max-width: 1fr;
 }
 
 .flexleft {
@@ -197,6 +197,10 @@ nav #icon{
   p.logoText{
     font-size: 32px;
   }
+  iframe{
+    width: 504px;
+    height: 283.2px;
+  }
   nav img{
     padding-left: 20px;
   }
@@ -216,13 +220,20 @@ nav #icon{
     text-decoration: none;
     list-style: none;
   }
+  .flexbody{
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    width: 378px;
+    height: 212.4px;
+    }
   p.logoText {
     font-size: 24px;
   }
   nav img {
     padding-left: 10px;
     height: 40px;padding-top: 10px;
-
   }
   nav #icon{
     display: block;
