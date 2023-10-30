@@ -1,50 +1,74 @@
 :root {
+  --black: #000000;
+  --persimmon: #d36135;
+  --bronze: #a24936;
+  --gold: #fdc323;
+  --light-gold: #ffd76a;
+  --lightest-gold: #ffecb8;
+  --beige: #fff2d3;
+  --white: white;
+
   /* body */
-  --body-background: #020709;
-  --body-color: #ffffff;
+  --body-background: var(--black);
+  --body-color: #000000;
 
   /* text */
-  --main-font-color: #2699C0;
-  --main-link: #fdc323;
-  --main-link-visited: #fdc323c0;
-  --main-link-hover: #fdc32366;
-  --title: #fdc323;
-  --logo-text: #ffffff;
+  --main-font-color: var(--beige);
+  --main-link: var(--gold);
+  --main-link-visited: var(--light-gold);
+  --main-link-hover: var(--lightest-gold);
+  --title: var(--persimmon);
+  --title-groove-light: var(--persimmon);
+  --title-groove-dark: var(--black);
+  --logo-text: var(--black);
+
+  /* textboxes */
+  --mini-textbox-background: var(--persimmon);
+  --mini-textbox-border: var(--black);
 
   /* navbar */
-  --nav-background: #19647e;
-  --nav-button-text: #ffffff;
-  --nav-button-hover-text: #fdc323;
-  --nav-button-hover-border: #fdc323;
-  --nav-active-button-text: #000000;
-  --nav-active-button-background: #fdc323;
-  --nav-active-button-border: #fdc323;
-  --nav-active-button-hover-text: #ffffff;
-  --nav-active-button-hover-border: #fdc323;
-  --nav-menu-background: #0E3A49;
-  --nav-menu-button-hover-text: #fdc323;
-  --nav-menu-button-hover-background: #0E3A49;
+  --nav-background: var(--gold);
+  --nav-button-text: var(--white);
+  --nav-button-hover-text: var(--black);
+  --nav-button-hover-border: var(--gold);
+  --nav-active-button-text: var(--gold);
+  --nav-active-button-background: var(--black);
+  --nav-active-button-border: var(--gold);
+  --nav-active-button-hover-text: var(--white);
+  --nav-active-button-hover-border: var(--gold);
+  --nav-menu-background: var(--gold);
+  --nav-menu-button-hover-text: var(--gold);
+  --nav-menu-button-hover-background: var(--gold);
   --nav-logo-link-hover-text: #fdc323;
-  --nav-logo-link-hover-background: #19647e;
+  --nav-logo-link-hover-background: var(--gold);
+  --nav-icon: var(--black);
 
   /* footer */
+  --copyright: var(--gold);
   --footer: #2699C0;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 body {
   background-color: var(--body-background);
-  color: var(--body-color);
+  color: var(--main-font-color);
+  font-family: Arial;
 }
+
 main {
   margin: 1em;
-  color: var(--main-font-color);
 }
+
+main p {
+  color: var(--main-font-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 main li {
   margin-left: 2em;
 }
@@ -68,10 +92,25 @@ main a:hover {
 h1 {
   color: var(--title);
   margin-bottom: .8em;
+  font-family: 'Arial Black';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+  text-shadow:
+    /* theta = 45deg, 90deg */
+    2px 2px var(--title-groove-dark), 0px 2px var(--title-groove-dark),
+    /* theta = 135deg, 180deg */
+    -2px 2px var(--title-groove-dark), -2px 0px var(--title-groove-dark),
+    /* theta = 225deg, 270deg */
+    -2px -2px var(--title-groove-dark), 0px -2px var(--title-groove-dark),
+    /* theta = 315deg, 0deg */
+    2px -2px var(--title-groove-dark), 2px 0px var(--title-groove-dark);
+
 }
 
 p {
   margin-bottom: .5em;
+  font-size: 14px;
 }
 
 details {
@@ -125,10 +164,6 @@ details:hover {
   flex-direction: row;
 }
 
-.custom-products h3 {
-  text-decoration: underline;
-}
-
 .videolink {
   float: right;
   padding: 1em;
@@ -139,7 +174,8 @@ footer {
   color: var(--footer);
 }
 
-.logo,.logoCombined {
+.logo,
+.logoCombined {
   display: flex;
 }
 
@@ -158,11 +194,60 @@ a.active {
 p.logoText {
   font-size: 36px;
   font-weight: Bold;
+  font-style: italic;
   color: var(--logo-text);
   padding-right: 40px;
   line-height: 80px;
   margin: 0;
+  /* text-shadow: var(--white) 0 0 15px; */
 }
+
+.copyright {
+  color: var(--copyright);
+}
+
+/* fix these! */
+
+.customOptionsBorder {
+  border-style: solid;
+  border-color: var(--gold);
+  border-radius: 1rem;
+  background-color: var(--persimmon);
+}
+
+.customProductsBorder {
+  border-style: solid;
+  border-color: var(--black);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: var(--bronze);
+  color: var(--beige);
+}
+
+/** fix these! **/
+
+article {
+  background-color: var(--bronze);
+  border-style: solid;
+  border-color: var(--gold);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.article-textbox {
+  background-color: var(--mini-textbox-background);
+  border-style: solid;
+  border-color: var(--mini-textbox-border);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* hr.underTitle {
+  align: center;
+  width: 50%;
+  border-top: 20px dotted white;
+  border-radius: 10px;
+} */
 
 /* navbar */
 
@@ -173,6 +258,8 @@ nav {
   z-index: 1000;
   text-decoration: none;
   list-style: none;
+  font-family: 'Arial Black';
+  font-style: italic;
 }
 
 nav a.logoLink {
@@ -196,6 +283,8 @@ nav li {
   margin: 0 8px;
   line-height: 80px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Arial';
 }
 
 nav a {
@@ -214,9 +303,9 @@ nav a.active:hover {
 }
 
 nav a:hover {
-border: 1px solid var(--nav-button-hover-border);
-color: var(--nav-button-hover-text);
-transition: .5s;
+  border: 1px solid var(--nav-button-hover-border);
+  color: var(--nav-button-hover-text);
+  transition: .5s;
 }
 
 nav #icon {
@@ -229,52 +318,63 @@ nav #icon {
   display: none;
 }
 
-@media (max-width: 1080px){
+@media (max-width: 1220px) {
   p.logoText {
     font-size: 32px;
   }
+
   iframe.YouTubeLink {
     width: 504px;
     height: 283.2px;
   }
+
   nav img {
     padding-left: 20px;
   }
+
   nav ul {
     margin-right: 20px;
     list-style: none;
   }
+
   nav a {
     font-size: 16px;
     text-decoration: none;
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1080px) {
   nav {
     z-index: 999;
     text-decoration: none;
     list-style: none;
   }
+
   .flexbody {
     flex-direction: column;
     align-items: center;
   }
+
   iframe.YouTubeLink {
     width: 378px;
     height: 212.4px;
-    }
+  }
+
   p.logoText {
     font-size: 24px;
   }
+
   nav img {
     padding-left: 10px;
-    height: 40px;padding-top: 10px;
+    height: 40px;
+    padding-top: 10px;
   }
+
   nav #icon {
     display: block;
     margin-left: auto;
   }
+
   nav ul {
     z-index: 999;
     position: fixed;
@@ -287,26 +387,31 @@ nav #icon {
     text-align: center;
     transition: all .5s;
   }
+
   nav li {
     z-index: 999;
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
+
   nav a {
     font-size: 20px;
   }
+
   .logoLink:hover {
     border: none;
     color: var(--nav-logo-link-hover-text);
     background-color: var(--nav-logo-link-hover-background);
   }
-  a.active,a:hover {
+
+  a.active,
+  a:hover {
     border: none;
     color: var(--nav-menu-button-hover-text);
-    background-color: var(--nav-menu-button-hover-background);
   }
+
   nav ul.show {
-   left: 0;
+    left: 0;
   }
 }
