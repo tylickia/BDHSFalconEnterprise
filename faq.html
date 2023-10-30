@@ -1,190 +1,168 @@
 <!DOCTYPE html>
-<html
-	lang="en"
-	dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Falcon Enterprise" />
-		<link
-			rel="shortcut icon"
-			href="images/falcon.ico" />
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-			rel="stylesheet" />
-		<style>
-			@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-		</style>
-		<title>FAQ</title>
-		<link
-			rel="stylesheet"
-			href="styles/style.css" />
-		<script src="https://kit.fontawesome.com/7c5374f519.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-		<script>
-			$(document).ready(function () {
-				$("#icon").click(function () {
-					$("ul").toggleClass("show");
-				});
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Falcon Enterprise" />
+	<link rel="shortcut icon" href="images/falcon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet" />
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+	</style>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<script src="https://kit.fontawesome.com/7c5374f519.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#icon").click(function () {
+				$("ul").toggleClass("show");
 			});
-		</script>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<div class="logo">
-					<a
-						class="logoLink"
-						href="/"
-						><img
-							src="images/falcon.png"
-							alt="logo"
-							height="60" />
-					</a>
-					<a
-						class="logoLink"
-						href="/">
-						<p class="logoText">Falcon Enterprise</p></a
-					>
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a class="logoLink" href="/"><img src="images/falcon.png" alt="logo" height="60" />
+				</a>
+				<a class="logoLink" href="/">
+					<p class="logoText">Falcon Enterprise</p>
+				</a>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/gallery.html">Gallery</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+					<li>
+						<a class="active" href="/faq.html">FAQ</a>
+					</li>
+				</ul>
+				<label id="icon">
+					<i class="fas fa-bars"></i>
+				</label>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<article class="questions">
+			<h1>Frequently Asked Questions</h1>
+			<div class="article-textbox">
+				<details>
+					<summary>What kind of items do you make?</summary>
+					<p>We make custom items including:</p>
 					<ul>
-						<li>
-							<a href="/">Home</a>
-						</li>
-						<li><a href="/about.html">About</a></li>
-						<li><a href="/gallery.html">Gallery</a></li>
-						<li><a href="/contact.html">Contact</a></li>
-						<li>
-							<a
-								class="active"
-								href="/faq.html"
-								>FAQ</a
-							>
-						</li>
+						<li>Plaques</li>
+						<li>Pens</li>
+						<li>Laser Engraving</li>
+						<li>Holiday Ornaments and decorations</li>
+						<li>Cutting Boards</li>
 					</ul>
-					<label id="icon">
-						<i class="fas fa-bars"></i>
-					</label>
-				</div>
-			</nav>
-		</header>
-
-		<main>
-			<section class="questions">
-				<h1>Frequently Asked Questions</h1>
-				<div>
-					<details>
-						<summary>What kind of items do you make?</summary>
-						<p>We make custom items including:</p>
-						<ul>
-							<li>Plaques</li>
-							<li>Pens</li>
-							<li>Laser Engraving</li>
-							<li>Holiday Ornaments and decorations</li>
-							<li>Cutting Boards</li>
-						</ul>
-					</details>
-					<details>
-						<summary>What is the turn around time?</summary>
-						<p>
-							It depends on the item ordered and the quantity requested. Plaques
-							can be made in a couple days. Larger quantity orders require more
-							time.
-						</p>
-					</details>
-					<details>
-						<summary>Do you offer shipping?</summary>
-						<p>
-							At this time we do not offer shipping. If you live within a 20
-							mile radius of Brown Deer High School in Wisconsin, we can arrange
-							for pick up or delivery.
-						</p>
-					</details>
-					<details>
-						<summary>Are ink refills available for the pens you sell?</summary>
-						<p>
-							Yes. Slimline pen refills can be purchased through
-							<a href="https://a.co/d/cvfjpVp">Amazon</a>.
-						</p>
-					</details>
-				</div>
+				</details>
+				<details>
+					<summary>What is the turn around time?</summary>
+					<p>
+						It depends on the item ordered and the quantity requested. Plaques
+						can be made in a couple days. Larger quantity orders require more
+						time.
+					</p>
+				</details>
+				<details>
+					<summary>Do you offer shipping?</summary>
+					<p>
+						At this time we do not offer shipping. If you live within a 20
+						mile radius of Brown Deer High School in Wisconsin, we can arrange
+						for pick up or delivery.
+					</p>
+				</details>
+				<details>
+					<summary>Are ink refills available for the pens you sell?</summary>
+					<p>
+						Yes. Slimline pen refills can be purchased through
+						<a href="https://a.co/d/cvfjpVp">Amazon</a>.
+					</p>
+				</details>
+			</div>
 			</section>
-		</main>
+	</main>
 
-		<footer>
-			<script
-				src="https://formspree.io/js/formbutton-v1.min.js"
-				defer></script>
-			<script>
-				window.formbutton =
-					window.formbutton ||
-					function () {
-						(formbutton.q = formbutton.q || []).push(arguments);
-					};
-				formbutton("create", {
-					action: "https://formspree.io/f/xlekrnvg",
-					title: "How can we help you?",
-					fields: [
-						{
-							type: "text",
-							label: "Name:",
-							name: "name",
-							placeholder: "First Last",
-						},
-						{
-							type: "email",
-							label: "Email:",
-							name: "email",
-							required: true,
-							placeholder: "your@email.com",
-						},
-						{
-							type: "text",
-							label: "Phone Number:",
-							name: "phone",
-							required: true,
-							placeholder: "(XXX) XXX-XXXX",
-						},
-						{
-							type: "textarea",
-							label: "Message:",
-							name: "message",
-							placeholder: "What can we do for you?",
-						},
-						{ type: "submit" },
-					],
-					styles: {
-						title: {
-							backgroundColor: "#19647e",
-						},
-						modal: {
-							backgroundColor: "#2288AA",
-						},
-						body: {
-							backgroundColor: "#2288AA",
-						},
-						button: {
-							backgroundColor: "#19647e",
-						},
+	<footer>
+		<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+		<script>
+			window.formbutton =
+				window.formbutton ||
+				function () {
+					(formbutton.q = formbutton.q || []).push(arguments);
+				};
+			formbutton("create", {
+				action: "https://formspree.io/f/xlekrnvg",
+				title: "How can we help you?",
+				fields: [
+					{
+						type: "text",
+						label: "Name:",
+						name: "name",
+						placeholder: "First Last",
 					},
-				});
-			</script>
-			<p>
-				<i>&copy; Falcon Enterprise 2022</i>
-			</p>
-		</footer>
-	</body>
+					{
+						type: "email",
+						label: "Email:",
+						name: "email",
+						required: true,
+						placeholder: "your@email.com",
+					},
+					{
+						type: "text",
+						label: "Phone Number:",
+						name: "phone",
+						required: true,
+						placeholder: "(XXX) XXX-XXXX",
+					},
+					{
+						type: "textarea",
+						label: "Message:",
+						name: "message",
+						placeholder: "What can we do for you?",
+					},
+					{ type: "submit" },
+				],
+				//////////// These styles need to be manually updated! ////////////
+				styles: {
+					fontFamily: "Arial",
+					title: {
+						backgroundColor: "#fdc323",
+						color: "black",
+					},
+					modal: {
+						backgroundColor: "black",
+						color: "black",
+					},
+					body: {
+						backgroundColor: "#ffd76a",
+					},
+					button: {
+						backgroundColor: "#fdc323",
+					},
+				},
+			});
+				//////////// These styles need to be manually updated! ////////////
+
+		</script>
+		<p>
+			<i class="copyright">&copy; Falcon Enterprise 2022</i>
+		</p>
+	</footer>
+</body>
+
 </html>

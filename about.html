@@ -43,7 +43,9 @@
 			});
 		</script>
 	</head>
+
 	<body>
+		<!-- /////////////////////////////////////// Navbar /////////////////////////////////////// -->
 		<header>
 			<nav>
 				<div class="logo">
@@ -58,12 +60,10 @@
 					<a
 						class="logoLink"
 						href="/">
-						<p class="logoText">Falcon Enterprise</p></a
-					>
+						<p class="logoText">Falcon Enterprise</p>
+					</a>
 					<ul>
-						<li>
-							<a href="/">Home</a>
-						</li>
+						<li><a href="/">Home</a></li>
 						<li>
 							<a
 								class="active"
@@ -85,17 +85,18 @@
 		<main>
 			<article class="community_outreach">
 				<h1>Falcon Enterprise</h1>
-				<p>
-					Falcon Enterprise has been providing custom orders to the surrounding
-					communtiy for the past few years. Young entrepeneurs engage in all
-					aspects of the business including problem solving, product design,
-					production, sales and marketing.
-				</p>
-
-				<p>
-					Falcon Enterprise provides hand made one of a kind products to meet
-					your needs. Please contact us for your custom order.
-				</p>
+				<div class="article-textbox">
+					<p>
+						Falcon Enterprise has been providing custom orders to the
+						surrounding community for the past few years. Young entrepeneurs
+						engage in all aspects of the business including problem solving,
+						product design, production, sales, and marketing.
+					</p>
+					<p>
+						Falcon Enterprise provides handmade one-of-a-kind products to meet
+						your needs. Please contact us for your custom order.
+					</p>
+				</div>
 			</article>
 		</main>
 
@@ -141,24 +142,29 @@
 						},
 						{ type: "submit" },
 					],
+					//////////// These styles need to be manually updated! ////////////
 					styles: {
+						fontFamily: "Arial",
 						title: {
-							backgroundColor: "#19647e",
+							backgroundColor: "#fdc323",
+							color: "black",
 						},
 						modal: {
-							backgroundColor: "#2288AA",
+							backgroundColor: "black",
+							color: "black",
 						},
 						body: {
-							backgroundColor: "#2288AA",
+							backgroundColor: "#ffd76a",
 						},
 						button: {
-							backgroundColor: "#19647e",
+							backgroundColor: "#fdc323",
 						},
 					},
 				});
+				//////////// These styles need to be manually updated! ////////////
 			</script>
 			<p>
-				<i>&copy; Falcon Enterprise 2022</i>
+				<i class="copyright">&copy; Falcon Enterprise 2022</i>
 			</p>
 		</footer>
 	</body>

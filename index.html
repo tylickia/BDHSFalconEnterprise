@@ -1,205 +1,177 @@
 <!DOCTYPE html>
-<html
-	lang="en"
-	dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Falcon Enterprise" />
-		<link
-			rel="shortcut icon"
-			href="images/falcon.ico" />
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-			rel="stylesheet" />
-		<style>
-			@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-		</style>
-		<title>Falcon Enterprise</title>
-		<link
-			rel="stylesheet"
-			href="styles/style.css" />
-		<script src="https://kit.fontawesome.com/7c5374f519.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-		<script>
-			$(document).ready(function () {
-				$("#icon").click(function () {
-					$("ul").toggleClass("show");
-				});
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Falcon Enterprise" />
+	<link rel="shortcut icon" href="images/falcon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet" />
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+	</style>
+	<title>Falcon Enterprise</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<script src="https://kit.fontawesome.com/7c5374f519.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#icon").click(function () {
+				$("ul").toggleClass("show");
 			});
-		</script>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<div class="logo">
-					<a
-						class="logoLink"
-						href="/"
-						><img
-							src="images/falcon.png"
-							alt="logo"
-							height="60" />
-					</a>
-					<a
-						class="logoLink"
-						href="/">
-						<p class="logoText">Falcon Enterprise</p></a
-					>
-					<ul>
-						<li>
-							<a
-								class="active"
-								href="/"
-								>Home</a
-							>
-						</li>
-						<li><a href="/about.html">About</a></li>
-						<li><a href="/gallery.html">Gallery</a></li>
-						<li><a href="/contact.html">Contact</a></li>
-						<li><a href="/faq.html">FAQ</a></li>
-					</ul>
-					<label id="icon">
-						<i class="fas fa-bars"></i>
-					</label>
-				</div>
-			</nav>
-		</header>
+		});
+	</script>
+</head>
 
-		<main>
-			<div class="flexbody">
-				<div class="flexcenter">
-					<article>
-						<div class="custom-options">
+<body>
+	<!-- /////////////////////////////////////// Navbar /////////////////////////////////////// -->
+	<header>
+		<nav>
+			<div class="logo">
+				<a class="logoLink" href="/"><img src="images/falcon.png" alt="logo" height="60" />
+				</a>
+				<a class="logoLink" href="/">
+					<p class="logoText">Falcon Enterprise</p>
+				</a>
+				<ul>
+					<li>
+						<a class="active" href="/">Home</a>
+					</li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/gallery.html">Gallery</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+					<li><a href="/faq.html">FAQ</a></li>
+				</ul>
+				<label id="icon">
+					<i class="fas fa-bars"></i>
+				</label>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="flexbody">
+			<div class="flexcenter">
+				<article>
+					<div class="custom-options"> <!-- customOptionsBorder -->
+						<div>
+							<h1>Custom Options</h1>
+						</div>
+						<div class="custom-products article-textbox"> <!-- customProductsBorder -->
 							<div>
-								<h1>
-									<u>Custom Options</u>
-								</h1>
+								<h3>Custom Products</h3>
+								<ul>
+									<li>Jewelry Boxes</li>
+									<li>Bird Houses</li>
+									<li>Plaques</li>
+									<li>Wooden Pens</li>
+									<li>Cutting Boards</li>
+									<li>Wall Decor</li>
+								</ul>
+								<h3>Graduation Items</h3>
+								<ul>
+									<li>Engraved Diploma Plaque</li>
+								</ul>
 							</div>
-							<div class="custom-products">
-								<div>
-									<h3>Custom Products</h3>
-									<ul>
-										<li>Jewelry Boxes</li>
-										<li>Bird Houses</li>
-										<li>Plaques</li>
-										<li>Wooden Pens</li>
-										<li>Cutting Boards</li>
-										<li>Wall Decor</li>
-									</ul>
-									<h3>Graduation Items</h3>
-									<ul>
-										<li>Engraved Diploma Plaque</li>
-									</ul>
-								</div>
-								<div>
-									<h3>Holiday Items</h3>
-									<ul>
-										<li>Ornaments</li>
-										<li>Coasters-set of 4</li>
-										<li>Wall Decor</li>
-									</ul>
+							<div>
+								<h3>Holiday Items</h3>
+								<ul>
+									<li>Ornaments</li>
+									<li>Coasters-set of 4</li>
+									<li>Wall Decor</li>
+								</ul>
 
-									<h3>Personalization</h3>
-									<ul>
-										<li>Engraving</li>
-										<li>Paint</li>
-									</ul>
-								</div>
+								<h3>Personalization</h3>
+								<ul>
+									<li>Engraving</li>
+									<li>Paint</li>
+								</ul>
 							</div>
 						</div>
-					</article>
-				</div>
-				<div class="flexright">
-					<aside class="videolink">
-						<iframe
-							class="YouTubeLink"
-							width="630"
-							height="354"
-							src="https://www.youtube.com/embed/69FfYLwAr3Q"
-							title="YouTube video player"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</aside>
-				</div>
+					</div>
+				</article>
 			</div>
-		</main>
+			<div class="flexright">
+				<aside class="videolink">
+					<iframe class="YouTubeLink" width="630" height="354" src="https://www.youtube.com/embed/69FfYLwAr3Q"
+						title="YouTube video player"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</aside>
+			</div>
+		</div>
+	</main>
 
-		<footer>
-			<script
-				src="https://formspree.io/js/formbutton-v1.min.js"
-				defer></script>
-			<script>
-				window.formbutton =
-					window.formbutton ||
-					function () {
-						(formbutton.q = formbutton.q || []).push(arguments);
-					};
-				formbutton("create", {
-					action: "https://formspree.io/f/xlekrnvg",
-					title: "How can we help you?",
-					fields: [
-						{
-							type: "text",
-							label: "Name:",
-							name: "name",
-							placeholder: "First Last",
-						},
-						{
-							type: "email",
-							label: "Email:",
-							name: "email",
-							required: true,
-							placeholder: "your@email.com",
-						},
-						{
-							type: "text",
-							label: "Phone Number:",
-							name: "phone",
-							required: true,
-							placeholder: "(XXX) XXX-XXXX",
-						},
-						{
-							type: "textarea",
-							label: "Message:",
-							name: "message",
-							placeholder: "What can we do for you?",
-						},
-						{ type: "submit" },
-					],
-					styles: {
-						title: {
-							backgroundColor: "#19647e",
-						},
-						modal: {
-							backgroundColor: "#2288AA",
-						},
-						body: {
-							backgroundColor: "#2288AA",
-						},
-						button: {
-							backgroundColor: "#19647e",
-						},
+	<footer>
+		<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+		<script>
+			window.formbutton =
+				window.formbutton ||
+				function () {
+					(formbutton.q = formbutton.q || []).push(arguments);
+				};
+			formbutton("create", {
+				action: "https://formspree.io/f/xlekrnvg",
+				title: "How can we help you?",
+				fields: [
+					{
+						type: "text",
+						label: "Name:",
+						name: "name",
+						placeholder: "First Last",
 					},
-				});
-			</script>
-			<p>
-				<i>&copy; Falcon Enterprise 2022</i>
-			</p>
-		</footer>
-	</body>
+					{
+						type: "email",
+						label: "Email:",
+						name: "email",
+						required: true,
+						placeholder: "your@email.com",
+					},
+					{
+						type: "text",
+						label: "Phone Number:",
+						name: "phone",
+						required: true,
+						placeholder: "(XXX) XXX-XXXX",
+					},
+					{
+						type: "textarea",
+						label: "Message:",
+						name: "message",
+						placeholder: "What can we do for you?",
+					},
+					{ type: "submit" },
+				],
+				//////////// These styles need to be manually updated! ////////////
+				styles: {
+					fontFamily: "Arial",
+					title: {
+						backgroundColor: "#fdc323",
+						color: "black",
+					},
+					modal: {
+						backgroundColor: "black",
+						color: "black",
+					},
+					body: {
+						backgroundColor: "#ffd76a",
+					},
+					button: {
+						backgroundColor: "#fdc323",
+					},
+				},
+			});
+				//////////// These styles need to be manually updated! ////////////
+		</script>
+		<p>
+			<i class="copyright">&copy; Falcon Enterprise 2022</i>
+		</p>
+	</footer>
+</body>
+
 </html>
